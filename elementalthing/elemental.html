@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Elemental</title>
+		<link rel="stylesheet" type="text/css" href="elemental.css">
+		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+		<script src="socket.io.js"></script>
+		<script src="elemental.json"></script>
+	</head>
+	
+	<body>
+		<div class="scroll" id="suggestions"></div>
+		<h1>Controls:</h1>
+		Press backspace to remove the last element from the combination square.<br/>
+		Click the combination square to combine elements.<br/>
+		Press CTRL+F to find elements.
+		<h1>This game was developed by newderv#1868.</h1>
+		<button onclick="elemresult(combo.sort())" style="width: 200px; height: 200px; background-color: #FF4444BB; color: #FFFFFF; position: fixed; bottom: 0px; right: 0px;" id="combo" >Click on elements to add them to the combo list.</button>
+		<a id="elements">
+		<button onclick="combinationof()" id = "1" style="background-color: rgb(224,96,64); margin: 3px;">Earth</button><button onclick="combinationof()" id = "2" style="background-color: rgb(255,128,64); margin: 3px;">Fire</button><button onclick="combinationof()" id = "3" style="background-color: rgb(128,128,255); margin: 3px;">Air</button><button onclick="combinationof()" id = "4" style="background-color: rgb(64,64,255); margin: 3px;">Water</button></a>
+		<script src="elemental.js"></script>
+	</body>
